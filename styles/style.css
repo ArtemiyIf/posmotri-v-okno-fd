@@ -97,7 +97,7 @@ html {
 
 /* передаём активное состояние на выбранную карточку*/
  .content__card-link:active {
-  background-color: #545050 !important; /* в данном случае меняем цвет фона у карточки в активном состоянии*/
+  background-color: #545050; /* в данном случае меняем цвет фона у карточки в активном состоянии*/
 }
 
 /* Добавляем подчеркивание при наведении */
@@ -167,6 +167,7 @@ html {
   width: 711px;
   height: 386px;
   object-fit: cover;
+  position: relative;
 }
 .result__video {
   width: 100%;
@@ -199,7 +200,7 @@ html {
 
 .search-form__label {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   width: fit-content;
 }
 
@@ -264,7 +265,7 @@ html {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   background-color: transparent;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -296,16 +297,11 @@ html {
   margin-top: 20px;
 }
 
-.result__video-container,
+
 .content__list-container {
   position: relative;
 }
 
-.preloader {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
