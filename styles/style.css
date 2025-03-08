@@ -40,6 +40,7 @@ html {
   background-color: #1b1919;
 }
 
+
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -101,7 +102,10 @@ html {
 
 /* Добавляем подчеркивание при наведении */
 .content__card-link:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
 } 
 
 .content__card-link:focus-visible {
