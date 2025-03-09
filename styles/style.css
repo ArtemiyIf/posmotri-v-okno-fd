@@ -96,7 +96,7 @@ html {
 
 /* передаём активное состояние на выбранную карточку*/
  .content__card-link:active {
-  background-color: #545050 !important; /* в данном случае меняем цвет фона у карточки в активном состоянии*/
+  background-color: #545050; /* в данном случае меняем цвет фона у карточки в активном состоянии*/
 }
 
 /* Добавляем подчеркивание при наведении */
@@ -112,10 +112,12 @@ html {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
+  line-height: 32px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 6px;
 }
 
 .content__video-card {
@@ -154,6 +156,7 @@ html {
   justify-content: space-between;
   align-items: start;
   margin-top: 16px;
+  align-items: flex-end;
 }
 
 .result__video-container {
@@ -279,8 +282,6 @@ html {
 }
 
 .search-form__submit-button {
-  margin-top: 20px; 
-  margin-bottom: 2px;
   min-height: 34px;
   width: 194px;
 }
