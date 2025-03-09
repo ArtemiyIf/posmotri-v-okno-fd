@@ -40,6 +40,7 @@ html {
   background-color: #1b1919;
 }
 
+
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
@@ -101,7 +102,10 @@ html {
 
 /* Добавляем подчеркивание при наведении */
 .content__card-link:hover {
-  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
 } 
 
 .content__card-link:focus-visible {
@@ -112,7 +116,11 @@ html {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
+<<<<<<< HEAD
   line-height: 32px;
+=======
+  line-height: 37px;
+>>>>>>> 4683b2c4e6f3d49c0119b8bdddfc7a0b3a5b75ed
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
@@ -163,6 +171,7 @@ html {
   width: 711px;
   height: 386px;
   object-fit: cover;
+  position: relative;
 }
 .result__video {
   width: 100%;
@@ -195,14 +204,14 @@ html {
 
 .search-form__label {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   width: fit-content;
 }
 
 
 .search-form__textfield {
   width: 225px;
-  height: 27px;
+  height: 24px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -260,7 +269,7 @@ html {
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #fff;
   background-color: transparent;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -292,16 +301,11 @@ html {
   margin-top: 20px;
 }
 
-.result__video-container,
+
 .content__list-container {
   position: relative;
 }
 
-.preloader {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
